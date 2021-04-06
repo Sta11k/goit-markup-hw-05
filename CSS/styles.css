@@ -1086,17 +1086,24 @@ li .active {
 
 .btn-modal {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: var(--transition-transform);
 }
+
+
 .modal-button {
   position: relative;
 }
 
-.btn-icon-close:befor {
+
+.btn-icon-close::after {
   position: absolute;
   content: '';
   background-image: url(../images/vector.svg);
@@ -1105,7 +1112,22 @@ li .active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- 
+}
+
+
+.btn-modal:hover,
+.btn-modal:focus{
+  transform: scale(1.15);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+} 
+
+ /* .btn-icon-close:hover::after{
+   background: rgba(0, 0, 0, 0.2);
+   fill:inherit;
+   
+ } */
+
+/* background: rgba(0, 0, 0, 0.2); */
 
 /* .main-projects{
   display: flex;
