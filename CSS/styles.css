@@ -1114,13 +1114,16 @@ li .active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
+
 
 
 .btn-modal:hover,
 .btn-modal:focus{
   transform: scale(1.15);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(33, 150, 243, 0.5);
+ 
 } 
 
  /* .btn-icon-close:hover::after{
