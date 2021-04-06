@@ -32,11 +32,11 @@
 
                 <ul class="nav-link list">
 
-                    <li class="item"> <a class="link-title-old link-title-col active" href="./index.html" >Студия</a> </li>
+                    <li class="item"> <a class="link-title-studio  link-title-col active" href="./index.html" >Студия</a> </li>
 
-                    <li class="item"> <a class="link-title-old link-title-col" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"> <a class="link-title-old link-title-col link-title-std-portfolio" href="./portfolio.html">Портфолио</a></li>
 
-                    <li class="item"> <a class="link-title-old link-title-col" href="">Контакты</a> </li>
+                    <li class="item"> <a class="link-title-old link-title-col link-title-contacts" href="">Контакты</a> </li>
 
                 </ul>
 
@@ -87,7 +87,26 @@
 
                 <h1 class="title-hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
 
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+
+                <div class="backdrop is-hidden" data-modal>
+                
+                    <div class="modal">
+                
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto qui consequuntur porro laboriosam, similique perspiciatis eveniet nisi,
+                            reprehenderit ex optio aspernatur sit eius voluptatem in? Officia rerum rem odit at.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iusto qui consequuntur porro laboriosam, similique perspiciatis eveniet nisi,
+                            reprehenderit ex optio aspernatur sit eius voluptatem in? Officia rerum rem odit at.
+                        </p>
+                
+                        <button class="btn-modal" data-modal-close>Закрыть</button>
+                
+                    </div>
+                
+                </div>
 
             </div>
             
@@ -147,20 +166,53 @@
 
                     <li class="item" >
 
-                        <a href=""><img src="./images/img_work_1.jpg" alt="programming" width="370"></a>
-                   
+                        <a href="" class="activ-work"  >
+                        
+                            <img class="img-work" src="./images/img_work_1.jpg" alt="programming" width="370">
+                           
+                            <div class="bg-bottom-work">
+                            
+                                <h3>Десктопные приложения</h3>
+                            
+                            </div>
+                        </a>
+                        
+                      
+
                     </li>
 
                     <li class="item" >
 
-                        <a href=""><img src="./images/img_work_2.jpg" alt="programming mobile" width="370"></a>
-                   
+                        <a href="" class="activ-work">
+                            <img src="./images/img_work_2.jpg" alt="programming mobile" width="370">
+                        
+                            <div class="bg-bottom-work">
+                            
+                                <h3>Десктопные приложения</h3>
+                            
+                            </div>
+                        
+                        </a>
+                        
+                        
+
                     </li>
 
                     <li class="item" >
                     
-                        <a href=""><img src="./images/img_work_3.jpg" alt="drawing graphics" width="370"></a>
-                   
+                        <a href="" class="activ-work">
+
+                            <img src="./images/img_work_3.jpg" alt="drawing graphics" width="370">
+
+                            <div class="bg-bottom-work">
+                            
+                                <h3>Десктопные приложения</h3>
+                            
+                            </div>
+                        </a>
+                        
+                        
+
                     </li>
 
                 </ul>
@@ -691,6 +743,8 @@
         
         
     </footer>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
